@@ -1,0 +1,46 @@
+Case Study : Telecom Churn Case Study
+Akash Kodiganti
+May 2020
+Problem Statement & Solution :
+Problem: In the telecom industry, customers are able to choose from multiple service providers and actively 
+switch from one operator to another. In this highly competitive market, the telecommunications industry 
+experiences an average of 15-25% annual churn rate. Given the fact that it costs 5-10 times more to 
+acquire a new customer than to retain an existing one, customer retention has now become even more
+important than customer acquisition.
+
+Action: Predict which customers are at high risk of churn.
+
+Using: Exploratory Data Analysis, Python Libraries, Machine Learning Models.
+
+Steps:
+
+1. Import Packages
+
+2. Read and Understand given Data - The input CSV file is stored in AWS S3
+
+3. Data Preparation
+
+  3.1. Filter high value customers
+
+  3.2. Remove columns having all zero values
+
+  3.3. Remove columns having more percentage in number of zeros
+
+  3.4. Imputing NaN with mean, mediam or mode for necessary columns
+
+  3.5. Remove Outliers if found any by plotting graphs (histogram, boxplot)
+
+  3.6. Derive any meaningful new features for further modelling
+
+4. Model Building
+
+  4.1. Split data in to Train and Test
+
+  4.2. Feature Scaling & Churn rate
+
+  4.3. Perform Principal Component Analysis (PCA) - Remove unwanted columns
+    4.3.1. Logistic Regression with PCA (Confusion Matrix, Accuracy, ROC)
+    4.3.2. Decision Tree Modeling with PCA
+    4.3.3. Random Forest Modeling with PCA (Viz. critical features)
+    
+5. Conclusion - Verify the Accuracy of different models, and take necessary Action based on extracted features. Possible action could be - Contact the customers periodically who are in the risk of churn based on these concluded features and provide special service schemes to retain the customers.
